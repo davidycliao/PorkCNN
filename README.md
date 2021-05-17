@@ -12,7 +12,7 @@ A Small Project for Pork Barrel Legislation  Classification Using CNN
 
 
 
-## Num of Train/ Test 
+### Num of Train/ Test 
 
 ```
 Shape of X Train: (797, 123) 
