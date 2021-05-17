@@ -66,7 +66,7 @@ model = keras.models.load_model('lour_pork_model')
 
 ```
 
-Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb) :point_right:
+Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
 
 ## Reference:
 
