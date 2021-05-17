@@ -62,7 +62,7 @@ weighted avg       0.91      0.91      0.91       394
 
 ```
 from tensorflow import keras
-model = keras.models.load_model('pork_model') 
+model = keras.models.load_model('lour_pork_model') 
 
 ```
 
