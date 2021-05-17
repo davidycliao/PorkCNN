@@ -5,7 +5,7 @@ A Small Project for Pork Barrel Legislation  Classification Using CNN
 ## Enviroment Setting
 
 - Python 3.8 
-- TensorFlow==2.5.0
+- tensorflow==2.5.0
 - numpy
 - scikit-learn
 - scipy 
