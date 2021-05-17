@@ -12,33 +12,34 @@ A Small Project for Pork Barrel Legislation  Classification Using CNN
 
 
 
-### Num of Train/ Test 
+### Original Trianing Textual Data 
 
- 
-| text	                                                        |    pork_bill      | 
-|:-------------------------------------------------------------:|:-------------:|
-|軍人撫卹條例第十八條條文修正草案落實軍人及眷屬之照顧（撫卹金）	        | 1| 
-|所得稅法第十七條條文修正草案學費之特別扣除額應以每人所繳之學雜費為限	| 1| 
-|所得稅法第十一條條文修正草案保險人員申報時得扣除一定比例之業務必要費用	| 1| 
-|土地稅法第二十八條之一條文修正草案土地贈與文教基金會未能免爭土地增值稅，修正之	| 1| 
-|敬老福利生活津貼暫行條例第三條條文修正草案放寬請領資格之門檻	| 1| 
-|洗錢防制法部分條文修正草案給予法官較大權限；起訴期間禁止被告的高消費行為	| 0| 
-|日據時代日本政府國庫券及債券處理條例草案就是保障日據時代持有日本債券者	| 0| 
-|大陸地區人民來臺從事觀光活動條例草案開放大陸人民觀光，振興經濟	| 0| 
-|限制欠稅人或欠稅營利事業負責人出境實施條例草案現行法令僅為行政命令位階	| 0| 
-|使用牌照稅法第七條條文修正草案民營汽車駕駛人訓練機構之教練車亦應免徵使用牌照稅	| 1| 
+``` 
+    text	                                         pork_bill
+0	軍人撫卹條例第十八條條文修正草案落實軍人及眷屬之照顧...   1
+1	所得稅法第十七條條文修正草案學費之特別扣除額應以每人...   1
+2	所得稅法第十一條條文修正草案保險人員申報時得扣除一定...   1
+3	土地稅法第二十八條之一條文修正草案土地贈與文教基金會...   1
+4	敬老福利生活津貼暫行條例第三條條文修正草案放寬請領資...   1
+5	洗錢防制法部分條文修正草案給予法官較大權限；起訴期間...	0
+6	日據時代日本政府國庫券及債券處理條例草案就是保障日據...	0
+7	大陸地區人民來臺從事觀光活動條例草案開放大陸人民觀光...	0
+8	限制欠稅人或欠稅營利事業負責人出境實施條例草案現行法...	0
+9	使用牌照稅法第七條條文修正草案民營汽車駕駛人訓練機構...	1
+```
 
+### Num of Train/ Test Split
 
 ```
 Shape of X Train: (797, 123) 
 Shape of X Test:  (394, 123) 
 Shape of Y Trian: (797,) 
 Shape of Y Test:  (394,)
-
 ```
 
+### Evaluation & Classification 
 
-### Model Evaluation
+Training conntext: number of pork legislation 792; none-Pork is 399. So I need more data to train/test. 😥
 
 ```
                 precision    recall  f1-score   support
@@ -51,22 +52,19 @@ Shape of Y Test:  (394,)
 weighted avg       0.91      0.91      0.91       394
 ```
 
+
 ```
 Predictions:         Not Pork(0)	Predictions:Pork(1)
 Acutal: Not Pork(0)	         251	                 14
 Acutal:Not Pork (1)	          25	                104
 ```
 
-- need more data to train 😥
 
-- Pork Legislation 792; None-Pork Legislation 399
+### Application on New Dataset (200 Sampled Legislative Questions)
 
-### Application on New Dataset
+#### Top 5 of 200 Samples
 
-
-##### Top 5 of 200 Sampled Legislative Questions
-
-| Pork Value(Constituency Interest) |      Legislative Questions   |  Topic |  Key Word |
+| Pork/Constituency Interest |      Legislative Questions   |  Topic |  Key Word |
 |:----------:|:-------------:|:------:|:------:|
 |0.811236739158630|	針對政府公教貸款利率高於一般商業銀行專案辦理之房屋貸款利率，使公教人員之房貸利息負擔沈重依舊...|	公務員福利 ; 房屋貸款 ; 利率|	公教貸款利率|
 |0.443107038736343|	南投縣為農業縣份，工商不發達，稅收財源不豐裕，全年度自有財源收入尚不敷支應全縣人事費支出，而...|	地方財政|	稅收 ; 地方財政
@@ -75,10 +73,11 @@ Acutal:Not Pork (1)	          25	                104
 |0.157373845577240|	針對交通部修正「道路交通安全規則」，將大客車、聯結車、大貨車等大型車職業司機考照執業年齡上限...|	退休年齡|	道路交通安全規則 ; 職業司機 ; 退休年齡|
 
 
+&nbsp; 
 
-##### Last 10 Rows of 200 Sampled Legislative Questions
+#### Last 10 Rows of 200 Samples
 
-| Pork Value(Constituency Interest) |      Legislative Questions   |  Topic |  Key Word |
+| Pork/Constituency Interest |      Legislative Questions   |  Topic |  Key Word |
 |:----------:|:-------------:|:------:|:------:|
 |0.000001753699053|	針對行政院金融監督管理委員會（金管會）宣稱，台灣上市上櫃公司投資中國累計匯回資金比例達7.9...|	大陸政策 ; 對外投資	| 投資中國 ; 台商資金匯回|
 |0.000001426775611|	就立委及總統選舉在即，立委選舉制度首次採行「單一選區兩票制」，選情緊繃，賄影重重，為免賄選猖...|	選舉風紀|	總統選舉 ; 立委選舉 ; 賄選|
