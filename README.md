@@ -38,7 +38,7 @@ Shape of Y Test:  (394,)
 weighted avg       0.91      0.91      0.91       394
 ```
 
-### Application on New Data
+### Application on New Dataset
 
 
 
