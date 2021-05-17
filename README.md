@@ -1,5 +1,5 @@
 # PorkCNN  🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖
-A Small Project for Pork Barrel Legislation  Classification Using CNN 
+A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
 
 
 ## Enviroment Setting
