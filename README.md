@@ -21,11 +21,12 @@ A Small Project for Pork Barrel Legislation  Classification Using CNN
 2	所得稅法第十一條條文修正草案保險人員申報時得扣除一定...   1
 3	土地稅法第二十八條之一條文修正草案土地贈與文教基金會...   1
 4	敬老福利生活津貼暫行條例第三條條文修正草案放寬請領資...   1
-5	洗錢防制法部分條文修正草案給予法官較大權限；起訴期間...	0
-6	日據時代日本政府國庫券及債券處理條例草案就是保障日據...	0
-7	大陸地區人民來臺從事觀光活動條例草案開放大陸人民觀光...	0
-8	限制欠稅人或欠稅營利事業負責人出境實施條例草案現行法...	0
-9	使用牌照稅法第七條條文修正草案民營汽車駕駛人訓練機構...	1
+5	洗錢防制法部分條文修正草案給予法官較大權限；起訴期間...	 0
+6	日據時代日本政府國庫券及債券處理條例草案就是保障日據...	 0
+7	大陸地區人民來臺從事觀光活動條例草案開放大陸人民觀光...	 0
+8	限制欠稅人或欠稅營利事業負責人出境實施條例草案現行法...	 0
+9	使用牌照稅法第七條條文修正草案民營汽車駕駛人訓練機構...	 1
+
 ```
 
 ### Num of Train/ Test Split
@@ -90,7 +91,6 @@ Acutal:Not Pork (1)	          25	                104
 ```
 from tensorflow import keras
 model = keras.models.load_model('lour_pork_model') 
-
 ```
 
 Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
