@@ -32,11 +32,12 @@ A Small Project for Pork Barrel Legislation  Classification Using Convolutional 
 ### Num of Train/ Test Split
 
 ```
-Shape of X Train: (797, 123) 
-Shape of X Test:  (394, 123) 
-Shape of Y Trian: (797,) 
-Shape of Y Test:  (394,)
+Num of Train Set: 797 
+Not Pork vs Pork: {0: 527, 1: 270}
+Num of Test Set: 394 
+Not Pork vs Pork: {0: 265, 1: 129}
 ```
+
 
 ### Evaluation & Classification 
 
