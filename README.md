@@ -12,7 +12,7 @@ A Small Project for Pork Barrel Legislation  Classification Using Convolutional 
 
 
 
-### Original Trianing Textual Data 
+### Trianing Data: Pork Barrel Legislation  
 
 ``` 
         text	                                         pork_bill
