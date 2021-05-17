@@ -40,7 +40,7 @@ Shape of Y Test:  (394,)
 
 ### Evaluation & Classification 
 
-Training conntext: number of pork legislation 792; none-Pork is 399. So I need more data to train/test. 😥
+Training conntext: number of pork legislation 792; none-Pork is 399. 
 
 ```
                 precision    recall  f1-score   support
@@ -52,7 +52,7 @@ Training conntext: number of pork legislation 792; none-Pork is 399. So I need m
    macro avg       0.91      0.89      0.90       394
 weighted avg       0.91      0.91      0.91       394
 ```
-
+So I need more data to train/test. 😥
 
 ```
 Predictions:              Not Pork(0)	 Predictions:Pork(1)
