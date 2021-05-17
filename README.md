@@ -15,7 +15,7 @@ A Small Project for Pork Barrel Legislation  Classification Using CNN
 ### Original Trianing Textual Data 
 
 ``` 
-    text	                                         pork_bill
+        text	                                         pork_bill
 0	軍人撫卹條例第十八條條文修正草案落實軍人及眷屬之照顧...   1
 1	所得稅法第十七條條文修正草案學費之特別扣除額應以每人...   1
 2	所得稅法第十一條條文修正草案保險人員申報時得扣除一定...   1
