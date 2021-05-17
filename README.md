@@ -55,9 +55,9 @@ weighted avg       0.91      0.91      0.91       394
 
 
 ```
-Predictions:         Not Pork(0)	Predictions:Pork(1)
+Predictions:              Not Pork(0)	 Predictions:Pork(1)
 Acutal: Not Pork(0)	         251	                 14
-Acutal:Not Pork (1)	          25	                104
+Acutal:    Pork (1)	          25	                104
 ```
 
 
