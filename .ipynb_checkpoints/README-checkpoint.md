@@ -13,7 +13,6 @@ A Small Project for Pork Barrel Legislation  Classification Using Convolutional 
 
 
 ### Original Trianing Textual Data (Pork Barrel Legislation)
- 
 
 ``` 
         text	                                         pork_bill
@@ -150,5 +149,5 @@ Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/m
 
 - [Yoon Kim, Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
 - @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
-- https://machinelearningmastery.com/start-here/#deeplearning
+- The collection of legislation was manually labelled by  Profession Luor, Ching-Jyuhn  and his research team.  We appreciate the assistance in providing the data.
 - Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
