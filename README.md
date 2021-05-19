@@ -87,9 +87,9 @@ weighted avg       0.91      0.91      0.91       394
 So I need more data to train/test. 😥
 
 ```
-Predictions:              Not Pork(0)	 Predictions:Pork(1)
-Acutal: Not Pork(0)	         251	                 14
-Acutal:    Pork (1)	          25	                104
+                     Prediction: Not Pork(0)	   Prediction: Pork(1)
+Acutal: Not Pork(0)	                251	                   14
+Acutal:    Pork (1)	                 25	                  104
 ```
 
 
