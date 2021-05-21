@@ -95,7 +95,7 @@ Acutal:    Pork (1)	                 78	                  747
 
 ### Application on New Dataset (2000 Sampled 6th Legislative Questions)
 
-#### Top 10 of 2000 Samples (more likely to pork barrel)
+#### Top 10 of 2000 Samples (more likely to be pork)
 
 
 | Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
@@ -125,7 +125,7 @@ Acutal:    Pork (1)	                 78	                  747
 
 &nbsp; 
 
-#### Last 10 Rows of 2000 Samples (less likely to pork barrel)
+#### Last 10 Rows of 2000 Samples (less likely to be pork)
 
 
 | Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
