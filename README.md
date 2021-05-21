@@ -76,14 +76,14 @@ Training conntext: Number of Pork Legislation 2510; Number of None-Pork Legislat
 
 
 ```
-              precision    recall  f1-score   support
+                        precision    recall  f1-score   support
+                        
+Non Pork Legislation        0.95      0.97      0.96      1566
+    Pork Legislation        0.94      0.91      0.92       825
 
-           0       0.95      0.97      0.96      1566
-           1       0.94      0.91      0.92       825
-
-    accuracy                           0.95      2391
-   macro avg       0.95      0.94      0.94      2391
-weighted avg       0.95      0.95      0.95      2391
+            accuracy                            0.95      2391
+           macro avg        0.95      0.94      0.94      2391
+        weighted avg        0.95      0.95      0.95      2391
 ```
 
 ```
