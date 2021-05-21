@@ -99,7 +99,7 @@ Acutal:    Pork (1)	                 78	                  747
 
 
 | Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
-|:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------|:--------------:|
+|:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------:|:--------------:|
 | 陳啟昱	   |0.996769189834595	        |鑑於現行《所得稅法》第十七條規定特別扣除額教育支出部分，僅以納稅義務人之子女就讀大專院校為限...|	Income tax; education expenses; deductions | Income Tax Law; Special Deductions; Educational Expenditure|
 | 林正峰	   |0.995515823364258	        |針對政府準備修法推動「二代健保」，健保保費採取「年度所得總額」為計算基礎，而非採用扣除免稅額...|	National; Health Insurance; Insurance Premium  |Second-generation health insurance; total annual income|
 | 彭添富	   |0.992780447006226	        |針對「辦理九十四年原住民中低收入戶家庭租屋補助計畫」專案補助計畫，特向行政院提出質詢。	    |Aboriginal life|	Aboriginal low- and middle-income households; housing subsidies|
@@ -129,7 +129,7 @@ Acutal:    Pork (1)	                 78	                  747
 
 
 | Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
-|:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------|:--------------:|
+|:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------:|:--------------:|
 |李復甸	   |0.000021549063604	|鑑於刑事偵察實務上緩起訴制度，有淪於檢察官為同案被告間不利證詞取得之交換手段之虞，破壞緩起訴...	|Investigation; litigation procedure |	Criminal investigation; secret witness|
 |林建榮	   |0.000020212990421   |為立法院朝野協商修改銀行法，明定信用卡、現金卡循環利率與銀行公布的基本放款利率差距不得超過十...	|Financial management; bank management|	Banking Law; Cash Card; Revolving Interest Rate; Card Debt|
 |林正峰	   |0.000019731034627	|針對行政院長張俊雄日前穿著輕便的長袖白襯衫，要求各級機關和學校身體力行節約能源，當場台下官員...	|Energy policy|	Energy saving|
