@@ -165,3 +165,4 @@ Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/m
 - @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
 - The collection of legislation was manually labelled by  Profession Luor, Ching-Jyuhn  and his research team.  We appreciate the assistance in providing the data.
 - Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
+- [台灣大學李宏毅老師深度學習教程](https://github.com/davidycliao/NTU-Machine-learning)
