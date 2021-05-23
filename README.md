@@ -13,7 +13,7 @@ I have trained a pork-barrel classifier on the human-labelling introduction of b
 
 
 
-### Original Trianing  Data (Pork Barrel Legislation from 2004-2012)
+### Original Trianing  Data (Pork Barrel Legislation)
 
 ``` 
         text	                                         pork_bill
