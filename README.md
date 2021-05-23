@@ -1,6 +1,7 @@
 # PorkCNN  🐖🐖🐖
 A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
 
+I have trained a pork-barrel classifier on the human-labelling introduction of bill and legislation from 2004-2012 (provided by Dr Ching-Jyuhn Luor, National Taipei University). The pre-trained model is available on my GitHub repo for end-to-end use. If there’s anything you need about the application, please don’t hesitate to send me a message.
 
 ## Enviroment Setting
 
@@ -54,16 +55,20 @@ conv1d_1 (Conv1D)            multiple                  60100
 _________________________________________________________________
 conv1d_2 (Conv1D)            multiple                  80100     
 _________________________________________________________________
+conv1d_3 (Conv1D)            multiple                  100100    
+_________________________________________________________________
+conv1d_4 (Conv1D)            multiple                  0 (unused)
+_________________________________________________________________
 global_max_pooling1d (Global multiple                  0         
 _________________________________________________________________
-dense (Dense)                multiple                  77056     
+dense (Dense)                multiple                  128256    
 _________________________________________________________________
 dropout (Dropout)            multiple                  0         
 _________________________________________________________________
 dense_1 (Dense)              multiple                  257       
 =================================================================
-Total params: 844,213
-Trainable params: 844,213
+Total params: 995,513
+Trainable params: 995,513
 Non-trainable params: 0
 _________________________________________________________________
 ```
@@ -88,8 +93,8 @@ weighted avg       0.95      0.95      0.95      2391
 
 ```
                      Prediction: Not Pork(0)	   Prediction: Pork(1)
-Acutal: Not Pork(0)	               1522	                   44
-Acutal:    Pork (1)	                 78	                  747
+Acutal: Not Pork(0)	               1513	                   53
+Acutal:    Pork (1)	                 68	                  757
 ```
 
 
@@ -163,5 +168,5 @@ Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/m
 
 - [Yoon Kim, Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
 - @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
-- The collection of legislation was manually labelled by  Profession Luor, Ching-Jyuhn  and his research team.  We appreciate the assistance in providing the data.
+- The collection of legislation was manually labelled by  Profession Luor, Ching-Jyuhn  and his research team.  I appreciate the assistance in providing the dataset.
 - Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
