@@ -1,7 +1,7 @@
 # PorkCNN  🐖🐖🐖
 A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
 
-I have trained a pork-barrel classifier on the human-labelling introduction of bill and legislation from 2004-2012 (provided by Dr Ching-Jyuhn Luor, National Taipei University). The pre-trained model is available on my GitHub repo for end-to-end use. If there’s anything you need about the application, please don’t hesitate to send me a message.
+The trained pork-barrel classifier uses the human-labelling introduction of the bill and legislation from Legislative Yuan ROC, 2004-2012 (provided by Dr Ching-Jyuhn Luor, National Taipei University). If there’s anything you need about the application, please don’t hesitate to send me a message.
 
 ## Enviroment Setting
 
