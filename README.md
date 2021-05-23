@@ -13,20 +13,20 @@ I have trained a pork-barrel classifier on the human-labelling introduction of b
 
 
 
-### Original Trianing  Data (Pork Barrel Legislation from 2004-2012)
+### Original Trianing  Data (Pork Barrel Legislation from 2004-2012, n = 7243)
 
 ``` 
         text	                                         pork_bill
-0	軍人撫卹條例第十八條條文修正草案落實軍人及眷屬之照顧...   1
-1	所得稅法第十七條條文修正草案學費之特別扣除額應以每人...   1
-2	所得稅法第十一條條文修正草案保險人員申報時得扣除一定...   1
-3	土地稅法第二十八條之一條文修正草案土地贈與文教基金會...   1
-4	敬老福利生活津貼暫行條例第三條條文修正草案放寬請領資...   1
-5	洗錢防制法部分條文修正草案給予法官較大權限；起訴期間...	 0
-6	日據時代日本政府國庫券及債券處理條例草案就是保障日據...	 0
-7	大陸地區人民來臺從事觀光活動條例草案開放大陸人民觀光...	 0
-8	限制欠稅人或欠稅營利事業負責人出境實施條例草案現行法...	 0
-9	使用牌照稅法第七條條文修正草案民營汽車駕駛人訓練機構...	 1
+0	軍人撫卹條例第十八條條文修正草案落實軍人及眷屬之照顧...      1
+1	所得稅法第十七條條文修正草案學費之特別扣除額應以每人...      1 
+2	所得稅法第十一條條文修正草案保險人員申報時得扣除一定...      1
+3	土地稅法第二十八條之一條文修正草案土地贈與文教基金會...      1
+4	敬老福利生活津貼暫行條例第三條條文修正草案放寬請領資...      1
+5	洗錢防制法部分條文修正草案給予法官較大權限；起訴期間...	    0
+6	日據時代日本政府國庫券及債券處理條例草案就是保障日據...	    0
+7	大陸地區人民來臺從事觀光活動條例草案開放大陸人民觀光...	    0
+8	限制欠稅人或欠稅營利事業負責人出境實施條例草案現行法...	    0
+9	使用牌照稅法第七條條文修正草案民營汽車駕駛人訓練機構...	    1
 
 ```
 
@@ -81,14 +81,14 @@ Training conntext: Number of Pork Legislation 2510; Number of None-Pork Legislat
 
 
 ```
-              precision    recall  f1-score   support
+                        precision    recall  f1-score   support
+                        
+Non Pork Legislation        0.95      0.97      0.96      1566
+    Pork Legislation        0.94      0.91      0.92       825
 
-           0       0.95      0.97      0.96      1566
-           1       0.94      0.91      0.92       825
-
-    accuracy                           0.95      2391
-   macro avg       0.95      0.94      0.94      2391
-weighted avg       0.95      0.95      0.95      2391
+            accuracy                            0.95      2391
+           macro avg        0.95      0.94      0.94      2391
+        weighted avg        0.95      0.95      0.95      2391
 ```
 
 ```
@@ -100,11 +100,11 @@ Acutal:    Pork (1)	                 68	                  757
 
 ### Application on New Dataset (2000 Sampled 6th Legislative Questions)
 
-#### Top 10 of 2000 Samples (more likely to pork barrel)
+#### Top 10 of 2000 Samples (more likely to be pork)
 
 
 | Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
-|:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------|:--------------:|
+|:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------:|:--------------:|
 | 陳啟昱	   |0.996769189834595	        |鑑於現行《所得稅法》第十七條規定特別扣除額教育支出部分，僅以納稅義務人之子女就讀大專院校為限...|	Income tax; education expenses; deductions | Income Tax Law; Special Deductions; Educational Expenditure|
 | 林正峰	   |0.995515823364258	        |針對政府準備修法推動「二代健保」，健保保費採取「年度所得總額」為計算基礎，而非採用扣除免稅額...|	National; Health Insurance; Insurance Premium  |Second-generation health insurance; total annual income|
 | 彭添富	   |0.992780447006226	        |針對「辦理九十四年原住民中低收入戶家庭租屋補助計畫」專案補助計畫，特向行政院提出質詢。	    |Aboriginal life|	Aboriginal low- and middle-income households; housing subsidies|
@@ -130,11 +130,11 @@ Acutal:    Pork (1)	                 68	                  757
 
 &nbsp; 
 
-#### Last 10 Rows of 2000 Samples (less likely to pork barrel)
+#### Last 10 Rows of 2000 Samples (less likely to be pork)
 
 
 | Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
-|:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------|:--------------:|
+|:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------:|:--------------:|
 |李復甸	   |0.000021549063604	|鑑於刑事偵察實務上緩起訴制度，有淪於檢察官為同案被告間不利證詞取得之交換手段之虞，破壞緩起訴...	|Investigation; litigation procedure |	Criminal investigation; secret witness|
 |林建榮	   |0.000020212990421   |為立法院朝野協商修改銀行法，明定信用卡、現金卡循環利率與銀行公布的基本放款利率差距不得超過十...	|Financial management; bank management|	Banking Law; Cash Card; Revolving Interest Rate; Card Debt|
 |林正峰	   |0.000019731034627	|針對行政院長張俊雄日前穿著輕便的長袖白襯衫，要求各級機關和學校身體力行節約能源，當場台下官員...	|Energy policy|	Energy saving|
@@ -170,3 +170,4 @@ Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/m
 - @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
 - The collection of legislation was manually labelled by  Profession Luor, Ching-Jyuhn  and his research team.  I appreciate the assistance in providing the dataset.
 - Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
+- [台灣大學李宏毅老師深度學習教程](https://github.com/davidycliao/NTU-Machine-learning)
