@@ -98,12 +98,12 @@ Acutal:    Pork (1)	                 68	                  757
 ```
 
 
-### Application on New Dataset (2000 Sampled 6th Legislative Questions)
+### Application on New Dataset (2000 Sampled 6th Parliamentary Questions)
 
 #### Top 10 of 2000 Samples (more likely to pork barrel)
 
 
-| Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
+| Legislator | Pork/Constituency Interest |                                Questions                          |       Topic      |    Key Word    |
 |:----------:|:--------------------------:|:----------------------------------------------------------------------------:|:-----------------|:--------------:|
 | 陳啟昱	   |0.996769189834595	        |鑑於現行《所得稅法》第十七條規定特別扣除額教育支出部分，僅以納稅義務人之子女就讀大專院校為限...|	Income tax; education expenses; deductions | Income Tax Law; Special Deductions; Educational Expenditure|
 | 林正峰	   |0.995515823364258	        |針對政府準備修法推動「二代健保」，健保保費採取「年度所得總額」為計算基礎，而非採用扣除免稅額...|	National; Health Insurance; Insurance Premium  |Second-generation health insurance; total annual income|
