@@ -1,7 +1,7 @@
 # PorkCNN  🐖🐖🐖
 A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
 
-The pork-barrel classifier uses the human-labelling introduction of the bills, legislation and amendments for training from Legislative Yuan, 2004-2012 (provided by Dr Ching-Jyuhn Luor, National Taipei University). If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
+The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association.  If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
 
 ## Enviroment Setting
 
@@ -42,6 +42,11 @@ Not Pork vs Pork: {0: 1566, 1: 825}
 
 ### Model Building & Specification
 
+<p align="center">
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/network2.png" >
+</p>
+
+
 ```
 Model: "dcnn"
 _________________________________________________________________
@@ -77,7 +82,8 @@ _________________________________________________________________
 
 ### Evaluation & Classification 
 
-Training conntext: Number of Pork Legislation 2510; Number of None-Pork Legislation is 4733. 
+
+#### Training conntext: Number of Pork Legislation 2510; Number of None-Pork Legislation is 4733. 
 
 
 ```
@@ -98,9 +104,14 @@ Acutal:    Pork (1)	                 68	                  757
 ```
 
 
-### Application on New Dataset (2000 Sampled 6th Parliamentary Questions)
+#### Application on New Dataset (Parliamentary Questions from 1993 - 2020)
 
-#### Top 10 of 2000 Samples (more likely to pork barrel)
+<p align="center">
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/p.png" >
+</p>
+
+
+### Top 10 of 2000 Sampled 6th Parliamentary Questions (more likely to pork barrel)
 
 
 | Legislator | Pork/Constituency Interest |                                Questions                          |       Topic      |    Key Word    |
