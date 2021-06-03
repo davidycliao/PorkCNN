@@ -43,7 +43,7 @@ Not Pork vs Pork: {0: 1566, 1: 825}
 ### Model Building & Specification
 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/network2.png" >
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/network2.png" >
 </p>
 
 
@@ -112,7 +112,7 @@ Note: The mean training loss and accuracy measured over each epochs, and the val
 #### Application on New Dataset (Parliamentary Questions from 1993 - 2020)
 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/p.png" >
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p.png" >
 </p>
 
 
