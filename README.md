@@ -1,9 +1,7 @@
 # PorkCNN  🐖🐖🐖
 A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
 
-The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association.  
-
-If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
+The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association.  If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
 
 ## Enviroment Setting
 
@@ -45,7 +43,7 @@ Not Pork vs Pork: {0: 1566, 1: 825}
 ### Model Building & Specification
 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/network2.png" >
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/network2.png" >
 </p>
 
 
@@ -108,13 +106,13 @@ Acutal:    Pork (1)	                 68	                  757
 #### Learning Curves
 Note: The mean training loss and accuracy measured over each epochs, and the validation loss and accuracy measured at the end of each. 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/learning_curves.png" >
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves.png" >
 </p>
 
 #### Application on New Dataset (Parliamentary Questions from 1993 - 2020)
 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p.png" >
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/p.png" >
 </p>
 
 

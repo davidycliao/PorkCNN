@@ -106,7 +106,7 @@ Acutal:    Pork (1)	                 68	                  757
 #### Learning Curves
 Note: The mean training loss and accuracy measured over each epochs, and the validation loss and accuracy measured at the end of each. 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/learning_curves.png" >
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves.png" >
 </p>
 
 #### Application on New Dataset (Parliamentary Questions from 1993 - 2020)
