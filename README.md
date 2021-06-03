@@ -103,6 +103,11 @@ Acutal: Not Pork(0)	               1513	                   53
 Acutal:    Pork (1)	                 68	                  757
 ```
 
+#### Learning Curves
+Note: The mean training loss and accuracy measured over each epochs, and the validation loss and accuracy measured at the end of each. 
+<p align="center">
+  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/master/image/learning_curves.png" >
+</p>
 
 #### Application on New Dataset (Parliamentary Questions from 1993 - 2020)
 
@@ -173,11 +178,10 @@ from tensorflow import keras
 model = keras.models.load_model('lour_pork_model') 
 ```
 
-Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
+Note: step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
 
 ## Reference:
 
 - [Yoon Kim, Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
 - @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
-- The collection of legislation was manually labelled by  Profession Luor, Ching-Jyuhn  and his research team.  I appreciate the assistance in providing the dataset.
 - Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
