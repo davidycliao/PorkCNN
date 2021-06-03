@@ -188,4 +188,4 @@ Note: step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/
 - [Yoon Kim, Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
 - @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
 - Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
-- 中文世界地表最嗆、最強李宏毅老師的「深度學習」@gga642381/ML2021-Spring
+- 中文世界地表最嗆、最強李宏毅老師的「深度學習」[@gga642381/ML2021-Spring](https://github.com/ga642381/ML2021-Spring)
