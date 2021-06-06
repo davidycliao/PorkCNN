@@ -1,7 +1,7 @@
 # PorkCNN  🐖🐖🐖
 A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
 
-The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association.  If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
+The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association. 
 
 ## Enviroment Setting
 
@@ -176,6 +176,7 @@ Note: The Number of parliamentary questions identified by the CNN model across y
 
 ### Use End-to-End Model
 
+If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
 ```
 from tensorflow import keras
 model = keras.models.load_model('lour_pork_model') 
