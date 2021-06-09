@@ -190,3 +190,15 @@ Note: step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/
 - @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
 - Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
 - 中文世界地表最嗆、最強李宏毅老師的「深度學習」[@gga642381/ML2021-Spring](https://github.com/ga642381/ML2021-Spring)
+
+## How to Cite:
+For citing this work, you can refer to the present GitHub project. For example, with BibTeX:
+```
+@misc{PorkCNN,
+    howpublished = {\url{https://github.com/davidycliao/PorkCNN}},
+    title = {A Small Project for Pork Barrel Legislation Classification Using Convolutional Neural Networks},
+    author = {David, Yen-Chieh Liao and Ching-Jyuhn Luor},
+    publisher = {GitHub},
+    year = {2021}
+}
+```
