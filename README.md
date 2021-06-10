@@ -6,7 +6,7 @@ The collection of training data consists of 7243 pieces of legislation in total 
 ## Enviroment Setting
 
 - Python 3.8 
-- tensorflow==2.5.0
+- tensorflow>=2.4.0
 - numpy
 - scikit-learn
 - scipy 
