@@ -112,14 +112,16 @@ Note: The mean training loss and accuracy measured over each epochs, and the val
 
 #### Application on New Dataset (Parliamentary Questions from 1993 - 2020)
 
-Note: The Number of parliamentary questions identified by the CNN model across year.
+Note: The Number of parliamentary questions identified as pork barrel attributes by the CNN model across year.
+
+
 
 <p align="center">
   <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p.png" >
 </p>
 
 
-### Top 10 of 2000 Sampled 6th Parliamentary Questions (more likely to pork barrel)
+### Top 10 of 2000 Sampled 6th Parliamentary Questions (more likely to express particularistic policies)
 
 
 | Legislator | Pork/Constituency Interest |                                Questions                          |       Topic      |    Key Word    |
@@ -149,7 +151,7 @@ Note: The Number of parliamentary questions identified by the CNN model across y
 
 &nbsp; 
 
-#### Last 10 Rows of 2000 Samples (less likely to pork barrel)
+#### Last 10 Rows of 2000 Samples (less likely to express particularistic policies)
 
 
 | Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
