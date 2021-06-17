@@ -13,7 +13,7 @@ The collection of training data consists of 7243 pieces of legislation in total 
 
 
 
-### Original Trianing  Data (Pork Barrel Legislation)
+### Original Trianing  Data (Labled Pork Barrel Legislation)
 
 ``` 
         text	                                         pork_bill
@@ -110,7 +110,7 @@ Note: The mean training loss and accuracy measured over each epochs, and the val
   <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves.png" >
 </p>
 
-#### Application on New Dataset (Parliamentary Questions from 1993 - 2020)
+#### Application on New Dataset (Parliamentary Questions 專案質詢 from 1993 - 2020)
 
 Note: The Number of parliamentary questions identified as pork barrel attributes by the CNN model across year.
 
