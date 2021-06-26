@@ -1,19 +1,19 @@
 # PorkCNN  🐖🐖🐖
 A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
 
-The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association.  If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
+The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association. 
 
 ## Enviroment Setting
 
 - Python 3.8 
-- tensorflow==2.5.0
+- tensorflow>=2.4.0
 - numpy
 - scikit-learn
 - scipy 
 
 
 
-### Original Trianing  Data (Pork Barrel Legislation)
+### Original Trianing  Data (Labled Pork Barrel Legislation)
 
 ``` 
         text	                                         pork_bill
@@ -43,7 +43,7 @@ Not Pork vs Pork: {0: 1566, 1: 825}
 ### Model Building & Specification
 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/network2.png" >
+  <img width="700" height="600" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/network2.png" >
 </p>
 
 
@@ -103,23 +103,30 @@ Acutal: Not Pork(0)	               1513	                   53
 Acutal:    Pork (1)	                 68	                  757
 ```
 
+```
+11/11 [==============================] - 3s 312ms/step - loss: 0.1779 - accuracy: 0.9477
+[0.17792339622974396, 0.9477206468582153]
+```
+
 #### Learning Curves
 
 Note: The mean training loss and accuracy measured over each epochs, and the validation loss and accuracy measured at the end of each. 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves.png" >
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves.png" >
 </p>
 
-#### Application on New Dataset (Parliamentary Questions from 1993 - 2020)
+#### Application on New Dataset (Parliamentary Questions 專案質詢 from 1993 - 2020)
 
-Note: The Number of parliamentary questions identified by the CNN model across year.
+Note: The Number of parliamentary questions identified as pork barrel attributes by the CNN model across year.
+
+
 
 <p align="center">
-  <img width="700" height="500" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p.png" >
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p.png" >
 </p>
 
 
-### Top 10 of 2000 Sampled 6th Parliamentary Questions (more likely to pork barrel)
+### Top 10 of 2000 Sampled 6th Parliamentary Questions (more likely to express particularistic policies)
 
 
 | Legislator | Pork/Constituency Interest |                                Questions                          |       Topic      |    Key Word    |
@@ -149,7 +156,7 @@ Note: The Number of parliamentary questions identified by the CNN model across y
 
 &nbsp; 
 
-#### Last 10 Rows of 2000 Samples (less likely to pork barrel)
+#### Last 10 Rows of 2000 Samples (less likely to express particularistic policies)
 
 
 | Legislator | Pork/Constituency Interest |                               Legislative Questions                          |       Topic      |    Key Word    |
@@ -176,6 +183,7 @@ Note: The Number of parliamentary questions identified by the CNN model across y
 
 ### Use End-to-End Model
 
+If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
 ```
 from tensorflow import keras
 model = keras.models.load_model('lour_pork_model') 
@@ -188,3 +196,16 @@ Note: step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/
 - [Yoon Kim, Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
 - @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
 - Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
+- 中文世界地表最嗆、最強李宏毅老師的「深度學習」[@gga642381/ML2021-Spring](https://github.com/ga642381/ML2021-Spring)
+
+## Cite:
+For citing this work, you can refer to the present GitHub project. For example, with BibTeX:
+```
+@misc{PorkCNN,
+    howpublished = {\url{https://github.com/davidycliao/PorkCNN}},
+    title = {A Small Project for Pork Barrel Legislation Classification Using Convolutional Neural Networks},
+    author = {David, Yen-Chieh Liao and Ching-Jyuhn Luor},
+    publisher = {GitHub},
+    year = {2021}
+}
+```
