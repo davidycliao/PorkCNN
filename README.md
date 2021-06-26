@@ -103,6 +103,11 @@ Acutal: Not Pork(0)	               1513	                   53
 Acutal:    Pork (1)	                 68	                  757
 ```
 
+```
+11/11 [==============================] - 3s 312ms/step - loss: 0.1779 - accuracy: 0.9477
+[0.17792339622974396, 0.9477206468582153]
+```
+
 #### Learning Curves
 
 Note: The mean training loss and accuracy measured over each epochs, and the validation loss and accuracy measured at the end of each. 
