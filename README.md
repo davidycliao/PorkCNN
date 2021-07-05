@@ -48,7 +48,7 @@ Not Pork vs Pork: {0: 1566, 1: 825}
 
 
 ```
-Model: "dcnn"
+Model: "PorkCNN"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -56,24 +56,26 @@ embedding (Embedding)        multiple                  586600
 _________________________________________________________________
 conv1d (Conv1D)              multiple                  40100     
 _________________________________________________________________
-conv1d_1 (Conv1D)            multiple                  60100     
+conv1d_1 (Conv1D)            multiple                  40100     
 _________________________________________________________________
-conv1d_2 (Conv1D)            multiple                  80100     
+conv1d_2 (Conv1D)            multiple                  60100     
 _________________________________________________________________
-conv1d_3 (Conv1D)            multiple                  100100    
+conv1d_3 (Conv1D)            multiple                  60100     
 _________________________________________________________________
-conv1d_4 (Conv1D)            multiple                  0 (unused)
+conv1d_4 (Conv1D)            multiple                  80100     
+_________________________________________________________________
+conv1d_5 (Conv1D)            multiple                  100100    
 _________________________________________________________________
 global_max_pooling1d (Global multiple                  0         
 _________________________________________________________________
-dense (Dense)                multiple                  128256    
+dense (Dense)                multiple                  179456    
 _________________________________________________________________
 dropout (Dropout)            multiple                  0         
 _________________________________________________________________
 dense_1 (Dense)              multiple                  257       
 =================================================================
-Total params: 995,513
-Trainable params: 995,513
+Total params: 1,146,913
+Trainable params: 1,146,913
 Non-trainable params: 0
 _________________________________________________________________
 ```
@@ -89,11 +91,11 @@ _________________________________________________________________
 ```
               precision    recall  f1-score   support
 
-           0       0.95      0.98      0.96      1566
-           1       0.95      0.90      0.92       825
+           0       0.94      0.98      0.96      1566
+           1       0.95      0.89      0.92       825
 
     accuracy                           0.95      2391
-   macro avg       0.95      0.94      0.94      2391
+   macro avg       0.95      0.93      0.94      2391
 weighted avg       0.95      0.95      0.95      2391
 ```
 
@@ -128,7 +130,7 @@ Note: This figure shows the number of parliamentary questions identified as pork
 
 
 <p align="center">
-  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p1.png" >
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p2.png" >
 </p>
 
 
