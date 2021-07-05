@@ -43,7 +43,7 @@ Not Pork vs Pork: {0: 1566, 1: 825}
 ### Model Building & Specification
 
 <p align="center">
-  <img width="700" height="600" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/network2.png" >
+  <img width="700" height="600" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/cnn.png" >
 </p>
 
 
@@ -117,13 +117,20 @@ Note: The mean training loss and accuracy measured over each epochs, and the val
 
 #### Application on New Dataset (Parliamentary Questions 專案質詢 from 1993 - 2020)
 
-Note: The Number of parliamentary questions identified as pork barrel attributes by the CNN model across year.
+Note: The figure shows the number of parliamentary questions each year. 
 
+<p align="center">
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p1.png" >
+</p>
+
+
+Note: This figure shows the number of parliamentary questions identified as pork barrel feature by the CNN model across year. 
 
 
 <p align="center">
-  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p.png" >
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p1.png" >
 </p>
+
 
 
 #### Top 10 of 2000 Sampled 6th Parliamentary Questions (more likely to express particularistic policies)
