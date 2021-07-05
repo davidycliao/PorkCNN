@@ -35,10 +35,20 @@ The collection of training data consists of 7243 pieces of legislation in total 
 ```
 Num of Train Set: 4852 
 Not Pork vs Pork: {0: 3167, 1: 1685}
+```
+<p align="center">
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/train_plot.png" >
+</p>
 
+
+```
 Num of Test Set: 2391 
 Not Pork vs Pork: {0: 1566, 1: 825}
 ```
+<p align="center">
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/test_plot.png" >
+</p>
+
 
 ### Model Building & Specification
 
