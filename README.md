@@ -11,7 +11,7 @@ The collection of training data consists of 7243 pieces of legislation in total 
 - scikit-learn
 - scipy 
 
-### Note
+## Notes
 
 - step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
 - K-folds Validation find [here](https://github.com/davidycliao/PorkCNN/blob/main/k-fold-validation.ipynb) 
