@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.hi-grey[Electoral Incentives and Porks]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="David Yen-Chieh Liao" />
+    <meta name="author" content=".smallest[PhD Student at Department of Government | University of Essex]" />
+    <meta name="author" content=".smallest[Paper III / PhD Dissertation Project in Progress]" />
+    <script src="libs/header-attrs-2.8/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# .hi-grey[Electoral Incentives and Porks]
+## .smallest.hi-slate[Exploring Parliamentary Questions Using Convolutional Neural Networks]
+### David Yen-Chieh Liao
+### .smallest[PhD Student at Department of Government | University of Essex]
+### .smallest[Paper III / PhD Dissertation Project in Progress]
+
+---
+
+exclude: true
+
+
+
+
+
+---
+layout: true
+# Research Questions
+---
+name:questions
+
+&amp;nbsp;
+
+- In this paper, we quantitatively investigate legislators’ electoral strategies and communication style by applying a deep learning model to measure pork-barrel features on .hi-grey[parliamentary questions] in Taiwan Legislative Yuan. 
+
+--
+
+- Research Questions:
+
+ 1. Are the legislators in the SNTV-MMD (single non-transferable vote in multi-member districts) more likely to bring home the bacon by promising the provision of particularistic goods?
+ 
+--
+
+ 2. Does the switch of electoral system from the SNTV to the SMDs reduce legislators' incentives to cultivate a personal reputation by paying less attention to distributive (pork barrel) policies?
+ 
+--
+
+ 3. Dose it change legislator electoral strategies by increasing more attention to universalism policies such as regulatory policies?
+
+---
+layout: true
+# Background
+---
+name:questions
+
+&amp;nbsp;
+
+- The SNTV-MMD was the major system to elect legislators before 2008 in Taiwan. 
+
+--
+
+- This was thought to intensify majority-seeking parties to run more than one candidate in a district, which increases incentives for candidates to run on personal votes against their party reputation. Given this, candidates were competing with competitors from not only opponent parties, but the same party as well.
+
+--
+
+- The SNTV-MMD in Taiwan has been criticized for creating .hi-grey[excessive intra-party chaos and competition] (Cox 1990; Hirano 2006; Ames 2001), as well as .hi-grey[encouraging factional and candidate-centered electoral politics] (e.g. Batto and Huang 2016; Wu 2003). 
+
+--
+
+- Therefore, some East-Asian democracies in 1990s  such as  Japan, South Korea and Taiwan started to reform the electoral system by changing SNTV-MMD to single-member districts (SMD-MMM). 
+
+---
+layout: true
+# The Literature: Personal Votes
+---
+name:literature
+
+&amp;nbsp;
+
+- The electoral system such as SNTV-MMD, which combines plurality rule with a single vote per voter and a district magnitude larger than one, was believed to .hi-grey[increase intra-party (centrifugal) competition] (Cox 1990; Carey and Shugart 1995).
+
+--
+
+- Under the SNTV-MMD, parties or party leaders have incentive to nominate more than one candidate to run in each district, which required their .hi-grey[candidates to compete against each other]. 
+
+--
+
+- Therefore, co-partisan candidates cannot rely exclusively on their party reputation and have to find an alternative means of attracting votes by .hi-grey[running on a personal reputation] via providing paricularistic services as called “personal vote” (Cain, Ferejohn, and Fiorina 1987; Reed 1994; Carey and Shugart 1995).
+
+---
+layout: true
+# The Literature: Pork Barrel Politics
+---
+name:literature
+
+&amp;nbsp;
+
+- An examination of the relationship between electoral systems and the “pork-barrel” phenomenon is being investigated in light of the explosion of interest in the past decade in .hi-grey[the effects of different electoral systems] on policy outputs (e.g., Hirano 2005; Samuels 2002; Stratmann and Baur 2002; Lancaster and Patterson 1990; Lancaster 1986). 
+
+--
+
+- The literature focusing on Taiwan distributive politics has investigated the effects of the electoral reform that .hi-grey[decreases legislators' incentive to bring home the bacon].
+
+--
+
+- For example, Sheng (2014a) and Sheng (2014b) investigate the impacts of electoral reform on changes of bill sponsorship with regards to particularistic goods among legislators. Luor and Hsieh (2008) and Luor and Liao (2009) focus on the impact of district magnitude on legislators’ incentive to propose pork barrel-related bills. 
+
+---
+
+&amp;nbsp;
+
+- In similar, Catalinac (2016) finds that LDP (Liberal Democratic Party) candidates under the SMDs in Japan adopted new electoral strategies by providing programmatic policy benefits such as national security among other candidates affiliated with LDP party, .hi-grey[reducing promise of pork barrel goods] and intra-party competition.
+
+--
+
+- Given this the SNTV system, candidates were competing with competitors from not only opponent parties, but the same party as well. As results, candidates were incentivized to attract votes by giving out more distributive benefits to their own constituency, rather than nation-wide.
+
+--
+
+- Under the SNTV-MMD, candidates face the major .hi-grey[threat from co-partisan candidates] and therefore, are likely to seek personal votes by promising particularistic benefits for their sincere voters (Cain et al. 1987; Carey and Shugart 1995; Catalinac 2016).
+
+
+---
+layout: true
+# Research Design
+---
+name:research-design
+
+### Training Deep Learning Model
+
+- We have trained a convolutional neural network with TensorFlow 2.6 on the human-labelled pork-barrel legislation, including the bills and the amendments from Legislative Yuan.
+
+&lt;img src="./images/diagram.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+- The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University.
+
+---
+
+### Labeld Pork-barrel Legislation
+
+- They have created .hi-grey[hand-labelled legislation] by reading the purpose of statute, devoted either to promoting the pork-barrel project (earmarked projects) in a district or cultivating favored specific population groups by providing subsidies such as agriculture allowance to the farmers ( Luor and Hsieh 2008; Luor and Liao 2009; Luor and Chan 2012).
+
+ 
+&lt;img src="./images/billeg.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Number of Train/ Test Splits
+
+- The collection of training data consists of 7243 pieces of legislation in total and containing 4852  (Not Pork vs Pork: 3167, 1685) training sets and 2391 (Not Pork vs Pork: 1566, 825) test sets, respectively. 
+
+&lt;img src="./images/full_plot.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+
+---
+layout: true
+# Declaring the CNN Model
+---
+name:cnn-model
+
+###  Model and Building
+
+- The implementation of the CNN is similar to that described by .grey[[Kim (2014)](https://aclanthology.org/D14-1181/)], except that this paper does not apply word embedding model for tokenization. 
+
+&lt;img src="./images/cnn.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+
+---
+layout: true
+# Performance 
+---
+name:performance
+
+&amp;nbsp;
+ 
+- The mean training loss and accuracy measured over each epochs, and the validation loss and accuracy measured at the end of each.
+
+&lt;img src="./images/learning_curves.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+---
+layout: true
+# Parliarmentary Questions  
+---
+name:parliarmentary-questions  
+
+&amp;nbsp;
+
+- For exploration of parliarmentary questions, I have web scraped the parliamentary questions and the speeches from The Website of Taiwan Legislative Yuan from 1994 to 2020, including categories of information with regards to the topic, keywords and the type.
+ 
+&lt;img src="./images/image3.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&amp;nbsp;
+
+- The figure shows the total number of parliamentary questions each year from Tawan Legislative Yuan. 
+
+&lt;img src="./images/p1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+---
+layout: true
+# Tentative Findings
+---
+name:parliarmentary-questions  
+
+
+&amp;nbsp;
+
+- The figure shows the number of parliamentary questions identified as pork barrel feature by the CNN model across year. 
+
+&lt;img src="./images/p2.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+layout: true
+# Consideration
+---
+
+&amp;nbsp;
+
+- In this paper, I aim to incorporate this application to classify the parliamentary questions and evaluate the hypothesis by looking at how electoral reform reduces legislator’s incentive to deliver pork barrel projects. 
+
+--
+
+- As you can see in the previous figures, a gradual decrease in the total number of  pork-featured questions are accompanied by the electoral reform in 2008.
+
+--
+
+- In next step, I plan to conduct an in-depth text analysis to compare the variation of topic categories across time and evaluate pork barrel programs in the context of Taiwan politics.
+
+
+
+---
+layout: true
+# Additionals
+---
+name:additionals
+
+&amp;nbsp;
+&amp;nbsp;
+&amp;nbsp;
+
+- PorkCNN: A Small Project for Pork Barrel Legislation Classification Using Convolutional Neural Networks (https://github.com/davidycliao/PorkCNN)
+
+- legisCrawler: An Automation Webcrawling Toolkit for Retrieving Taiwan Parliamentary Questions (https://github.com/davidycliao/legisCrawler)
+
+
+
+---
+layout: false
+class: inverse, center, middle
+
+# Thank You
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+(function(time) {
+  var d2 = function(number) {
+    return ('0' + number).slice(-2); // left-pad 0 to minutes/seconds
+  },
+
+  time_format = function(total) {
+    var secs = Math.abs(total) / 1000;
+    var h = Math.floor(secs / 3600);
+    var m = Math.floor(secs % 3600 / 60);
+    var s = Math.round(secs % 60);
+    var res = d2(m) + ':' + d2(s);
+    if (h > 0) res = h + ':' + res;
+    return res;  // [hh:]mm:ss
+  },
+
+  slide_number_div = function(i) {
+    return document.getElementsByClassName('remark-slide-number').item(i);
+  },
+
+  current_page_number = function(i) {
+    return slide_number_div(i).firstChild.textContent;  // text "i / N"
+  };
+
+  var timer = document.createElement('span'); timer.id = 'slide-time-left';
+  var time_left = time, k = slideshow.getCurrentSlideIndex(),
+      last_page_number = current_page_number(k);
+
+  setInterval(function() {
+    time_left = time_left - 1000;
+    timer.innerHTML = ' ' + time_format(time_left);
+    if (time_left < 0) timer.style.color = 'red';
+  }, 1000);
+
+  slide_number_div(k).appendChild(timer);
+
+  slideshow.on('showSlide', function(slide) {
+    var i = slide.getSlideIndex(), n = current_page_number(i);
+    // reset timer when a new slide is shown and the page number is changed
+    if (last_page_number !== n) {
+      time_left = time; last_page_number = n;
+      timer.innerHTML = ' ' + time_format(time); timer.style.color = null;
+    }
+    slide_number_div(i).appendChild(timer);
+  });
+})(40000);
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+  .logo {
+    background-image: url(images/University_of_Essex.eps);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0.7em;
+    right: 1em;
+    width: 100px;
+    height: 110px;
+    z-index: 0;
+  }
+</style>
+  
+  <script>
+  document
+.querySelectorAll(
+  '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+  // ':not(.inverse)' +
+    ':not(.hide-logo)'
+)
+.forEach(el => {
+  el.innerHTML += '<div class="logo"></div>';
+});
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
