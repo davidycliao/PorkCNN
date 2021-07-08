@@ -11,11 +11,7 @@ The collection of training data consists of 7243 pieces of legislation in total 
 - scikit-learn
 - scipy 
 
-### Note
 
-- step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
-- K-folds Validation find [here](https://github.com/davidycliao/PorkCNN/blob/main/k-fold-validation.ipynb) 
-- training visualization finds [TensorBoard](https://tensorboard.dev/experiment/JhReILPIQReLBA7wBoaBtQ/)
 
 ### Original Trianing  Data (Labled Pork Barrel Legislation)
 
@@ -212,8 +208,7 @@ from tensorflow import keras
 model = keras.models.load_model('lour_pork_model') 
 ```
 
-
-
+Note: step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
 
 ## Reference:
 
