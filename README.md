@@ -12,6 +12,14 @@ The collection of training data consists of 7243 pieces of legislation in total 
 - scipy 
 
 
+## Notes
+
+- Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/pork-cnn-classification.ipynb)
+- K-folds validation finds [here](https://raw.githack.com/davidycliao/PorkCNN/main/k-folds-validation.ipynb) 
+- Training visualization finds [TensorBoard](https://github.com/davidycliao/PorkCNN/blob/main/tensorboard-visualization.ipynb)
+- TensorBoard for the measurements and visualizations needed during the machine learning workflow can be found [here](https://tensorboard.dev/experiment/D82LowP3TWGwWiL0NYcXLA/#scalars).
+
+
 ### Original Trianing  Data (Labled Pork Barrel Legislation)
 
 ``` 
@@ -197,8 +205,6 @@ Note: This figure shows the number of parliamentary questions identified as pork
 
 
 
-
-
 ### Use End-to-End Model
 
 If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
@@ -206,13 +212,6 @@ If there’s anything you need about the application and end-to-end use, please 
 from tensorflow import keras
 model = keras.models.load_model('lour_pork_model') 
 ```
-
-### Notes
-
-- Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
-- K-folds Validation finds [here](https://github.com/davidycliao/PorkCNN/blob/main/k-fold-validation.ipynb) 
-- Training visualization finds [TensorBoard](https://tensorboard.dev/experiment/JhReILPIQReLBA7wBoaBtQ/)
-
 
 
 ## Reference:

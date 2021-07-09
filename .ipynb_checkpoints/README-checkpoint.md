@@ -12,6 +12,13 @@ The collection of training data consists of 7243 pieces of legislation in total 
 - scipy 
 
 
+## Notes
+
+- Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/pork-cnn-classification.ipynb)
+- K-folds validation finds [here](https://raw.githack.com/davidycliao/PorkCNN/main/k-folds-validation.ipynb) 
+- Training visualization finds [TensorBoard](https://github.com/davidycliao/PorkCNN/blob/main/tensorboard-visualization.ipynb)
+- TensorBoard for the measurements and visualizations needed during the machine learning workflow can be found [here](https://tensorboard.dev/experiment/D82LowP3TWGwWiL0NYcXLA/#scalars).
+
 
 ### Original Trianing  Data (Labled Pork Barrel Legislation)
 
@@ -35,20 +42,30 @@ The collection of training data consists of 7243 pieces of legislation in total 
 ```
 Num of Train Set: 4852 
 Not Pork vs Pork: {0: 3167, 1: 1685}
-
-Num of Test Set: 2391 
-Not Pork vs Pork: {0: 1566, 1: 825}
 ```
-
-### Model Building & Specification
-
 <p align="center">
-  <img width="700" height="600" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/network2.png" >
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/train_plot.png" >
 </p>
 
 
 ```
-Model: "dcnn"
+Num of Test Set: 2391 
+Not Pork vs Pork: {0: 1566, 1: 825}
+```
+<p align="center">
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/test_plot.png" >
+</p>
+
+
+### Model Building & Specification
+
+<p align="center">
+  <img width="700" height="600" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/cnn.png" >
+</p>
+
+
+```
+Model: "PorkCNN"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -56,24 +73,26 @@ embedding (Embedding)        multiple                  586600
 _________________________________________________________________
 conv1d (Conv1D)              multiple                  40100     
 _________________________________________________________________
-conv1d_1 (Conv1D)            multiple                  60100     
+conv1d_1 (Conv1D)            multiple                  40100     
 _________________________________________________________________
-conv1d_2 (Conv1D)            multiple                  80100     
+conv1d_2 (Conv1D)            multiple                  60100     
 _________________________________________________________________
-conv1d_3 (Conv1D)            multiple                  100100    
+conv1d_3 (Conv1D)            multiple                  60100     
 _________________________________________________________________
-conv1d_4 (Conv1D)            multiple                  0 (unused)
+conv1d_4 (Conv1D)            multiple                  80100     
+_________________________________________________________________
+conv1d_5 (Conv1D)            multiple                  100100    
 _________________________________________________________________
 global_max_pooling1d (Global multiple                  0         
 _________________________________________________________________
-dense (Dense)                multiple                  128256    
+dense (Dense)                multiple                  179456    
 _________________________________________________________________
 dropout (Dropout)            multiple                  0         
 _________________________________________________________________
 dense_1 (Dense)              multiple                  257       
 =================================================================
-Total params: 995,513
-Trainable params: 995,513
+Total params: 1,146,913
+Trainable params: 1,146,913
 Non-trainable params: 0
 _________________________________________________________________
 ```
@@ -89,11 +108,11 @@ _________________________________________________________________
 ```
               precision    recall  f1-score   support
 
-           0       0.95      0.98      0.96      1566
-           1       0.95      0.90      0.92       825
+           0       0.94      0.98      0.96      1566
+           1       0.95      0.89      0.92       825
 
     accuracy                           0.95      2391
-   macro avg       0.95      0.94      0.94      2391
+   macro avg       0.95      0.93      0.94      2391
 weighted avg       0.95      0.95      0.95      2391
 ```
 
@@ -117,16 +136,23 @@ Note: The mean training loss and accuracy measured over each epochs, and the val
 
 #### Application on New Dataset (Parliamentary Questions 專案質詢 from 1993 - 2020)
 
-Note: The Number of parliamentary questions identified as pork barrel attributes by the CNN model across year.
-
-
+Note: The figure shows the number of parliamentary questions each year. 
 
 <p align="center">
-  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p.png" >
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p1.png" >
 </p>
 
 
-### Top 10 of 2000 Sampled 6th Parliamentary Questions (more likely to express particularistic policies)
+Note: This figure shows the number of parliamentary questions identified as pork barrel feature by the CNN model across year. 
+
+
+<p align="center">
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p2.png" >
+</p>
+
+
+
+#### Top 10 of 2000 Sampled 6th Parliamentary Questions (more likely to express particularistic policies)
 
 
 | Legislator | Pork/Constituency Interest |                                Questions                          |       Topic      |    Key Word    |
@@ -179,8 +205,6 @@ Note: The Number of parliamentary questions identified as pork barrel attributes
 
 
 
-
-
 ### Use End-to-End Model
 
 If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
@@ -189,7 +213,6 @@ from tensorflow import keras
 model = keras.models.load_model('lour_pork_model') 
 ```
 
-Note: step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
 
 ## Reference:
 
