@@ -107,18 +107,18 @@ _________________________________________________________________
 ```
               precision    recall  f1-score   support
 
-           0       0.94      0.98      0.96      1566
-           1       0.95      0.89      0.92       825
+           0       0.95      0.97      0.96      1566
+           1       0.94      0.91      0.92       825
 
     accuracy                           0.95      2391
-   macro avg       0.95      0.93      0.94      2391
+   macro avg       0.95      0.94      0.94      2391
 weighted avg       0.95      0.95      0.95      2391
 ```
 
 ```
                      Prediction: Not Pork(0)	   Prediction: Pork(1)
-Acutal: Not Pork(0)	               1513	                   53
-Acutal:    Pork (1)	                 68	                  757
+Acutal: Not Pork(0)	               1520	                   46
+Acutal:    Pork (1)	                 76	                  749
 ```
 
 ```
