@@ -209,9 +209,9 @@ model = keras.models.load_model('lour_pork_model')
 
 ### Notes
 
-- step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
+- Step-by-step tutorial finds [here](https://github.com/davidycliao/PorkCNN/blob/main/demo-cnn-pork-barrel-classification-task.ipynb)
 - K-folds Validation finds [here](https://github.com/davidycliao/PorkCNN/blob/main/k-fold-validation.ipynb) 
-- training visualization finds [TensorBoard](https://tensorboard.dev/experiment/JhReILPIQReLBA7wBoaBtQ/)
+- Training visualization finds [TensorBoard](https://tensorboard.dev/experiment/JhReILPIQReLBA7wBoaBtQ/)
 
 
 
