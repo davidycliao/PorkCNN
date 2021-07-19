@@ -16,7 +16,7 @@ The collection of training data consists of 7243 pieces of legislation in total 
 - Step-by-step tutorial for training machine learning workflow please finds [here](https://github.com/davidycliao/PorkCNN/blob/main/pork-cnn-classification.ipynb).
 - K-folds validation can be found from [here](https://raw.githack.com/davidycliao/PorkCNN/main/k-folds-validation.ipynb). 
 - The code for creating TensorBoard finds [here](https://github.com/davidycliao/PorkCNN/blob/main/tensorboard-visualization.ipynb).
-- TensorBoard for the measurements and visualizations during the machine learning workflow can be found from [here](https://tensorboard.dev/experiment/D82LowP3TWGwWiL0NYcXLA/#scalars).
+- TensorBoard for the measurements and visualizations during the machine learning workflow can be found from [here](https://tensorboard.dev/experiment/2Jm6GKexQiKaLyUz5uKSzg/#scalars).
 
 
 ### Original Trianing  Data (Labled Pork Barrel Legislation)
