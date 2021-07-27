@@ -3,6 +3,14 @@ A Small Project for Pork Barrel Legislation  Classification Using Convolutional 
 
 The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association. 
 
+
+
+
+<p align="center">
+  <img width="700" height="600" src="https://github.com/davidycliao/PorkCNN/blob/main/images/policyType.png" >
+</p>
+
+
 ## Enviroment Setting
 
 - Python 3.8 
@@ -17,6 +25,7 @@ The collection of training data consists of 7243 pieces of legislation in total 
 - K-folds validation can be found from [here](https://raw.githack.com/davidycliao/PorkCNN/main/k-folds-validation.ipynb). 
 - The code for creating TensorBoard finds [here](https://github.com/davidycliao/PorkCNN/blob/main/tensorboard-visualization.ipynb).
 - TensorBoard for the measurements and visualizations during the machine learning workflow can be found from [here](https://tensorboard.dev/experiment/2Jm6GKexQiKaLyUz5uKSzg/#scalars).
+
 
 
 ### Original Trianing  Data (Labled Pork Barrel Legislation)
