@@ -7,7 +7,7 @@ The collection of training data consists of 7243 pieces of legislation in total 
 
 
 <p align="center">
-  <img width="700" height="600" src="https://github.com/davidycliao/PorkCNN/blob/main/images/policyType.png" >
+  <img width="700" height="450" src="https://github.com/davidycliao/PorkCNN/blob/main/images/policyType.png" >
 </p>
 
 
@@ -68,7 +68,7 @@ Not Pork vs Pork: {0: 1566, 1: 825}
 ### Model Building & Specification
 
 <p align="center">
-  <img width="700" height="600" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/cnn.png" >
+  <img width="700" height="700" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/cnn.png" >
 </p>
 
 
