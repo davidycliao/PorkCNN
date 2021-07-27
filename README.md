@@ -1,15 +1,6 @@
 # PorkCNN  🐖🐖🐖
 A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
 
-The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association. 
-
-
-
-
-<p align="center">
-  <img width="700" height="450" src="https://github.com/davidycliao/PorkCNN/blob/main/images/policyType.png" >
-</p>
-
 
 ## Enviroment Setting
 
@@ -29,6 +20,17 @@ The collection of training data consists of 7243 pieces of legislation in total 
 
 
 ### Original Trianing  Data (Labled Pork Barrel Legislation)
+
+The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association. 
+
+
+
+
+<p align="center">
+  <img width="700" height="450" src="https://github.com/davidycliao/PorkCNN/blob/main/images/policyType.png" >
+</p>
+
+
 
 ``` 
         text	                                         pork_bill
