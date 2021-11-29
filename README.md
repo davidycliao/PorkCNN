@@ -5,7 +5,7 @@ A Small Project for Pork Barrel Legislation  Classification Using Convolutional 
 ## Enviroment Setting
 
 - Python 3.8 
-- tensorflow>=2.4.0
+- tensorflow>=2.4.4
 - numpy
 - scikit-learn
 - scipy 
