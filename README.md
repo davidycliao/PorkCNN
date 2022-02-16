@@ -18,7 +18,7 @@
 - The code for creating TensorBoard finds [here](https://github.com/davidycliao/PorkCNN/blob/main/tensorboard-visualization.ipynb).
 - TensorBoard for the measurements and visualizations during the machine learning workflow can be found from [here](https://tensorboard.dev/experiment/2Jm6GKexQiKaLyUz5uKSzg/#scalars).
 
-
+- The training data available upon request.
 
 ### Original Trianing  Data (Labled Pork Barrel Legislation)
 
