@@ -1,5 +1,6 @@
 # PorkCNN  🐖🐖🐖
-A Small Project for Pork Barrel Legislation  Classification Using Convolutional Neural Networks 
+
+### Pork Barrel Classification Task for Taiwan Pork Barrel Context Using Convolutional Neural Networks 
 
 
 ## Enviroment Setting
