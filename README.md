@@ -144,7 +144,7 @@ Acutal:    Pork (1)	                 76	                  749
 Note: The mean training loss and accuracy measured over each epochs, and the validation loss and accuracy measured at the end of each. 
 
 <p align="center">
-  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves2.png" >
+  <img width="640" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves2.png" >
 </p>
 
 
@@ -153,7 +153,7 @@ Note: The mean training loss and accuracy measured over each epochs, and the val
 Note: The figure shows the number of parliamentary questions each year. 
 
 <p align="center">
-  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p1.png" >
+  <img width="640" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p1.png" >
 </p>
 
 
@@ -161,7 +161,7 @@ Note: This figure shows the number of parliamentary questions identified as pork
 
 
 <p align="center">
-  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p2.png" >
+  <img width="640" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/p2.png" >
 </p>
 
 
