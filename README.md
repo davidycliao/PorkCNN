@@ -28,10 +28,8 @@
 The collection of training data consists of 7243 pieces of legislation in total and containing 4852 training sets and 2391 test sets, respectively.  The collection of legislation was manually labelled with binary-instance classification by Dr. Ching-Jyuhn Luor and his research team at National Taipei University. They created hand-labelled legislation by reading the text, devoted either to promoting the pork-barrel project in a district (earmarked projects) or cultivating favored minorities by providing subsidies to such as veterans association. 
 
 
-
-
 <p align="center">
-  <img width="700" height="450" src="https://github.com/davidycliao/PorkCNN/blob/main/images/policyType.png" >
+  <img width="700" height="450" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/policyType.png" >
 </p>
 
 
@@ -74,7 +72,7 @@ Not Pork vs Pork: {0: 1566, 1: 825}
 ### Model Building & Specification
 
 <p align="center">
-  <img width="700" height="700" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/cnn.png" >
+  <img width="620" height="700" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/cnn.png" >
 </p>
 
 
