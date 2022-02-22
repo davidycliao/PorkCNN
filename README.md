@@ -56,7 +56,7 @@ Num of Train Set: 4852
 Not Pork vs Pork: {0: 3167, 1: 1685}
 ```
 <p align="center">
-  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/train_plot.png" >
+  <img width="505" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/train_plot.png" >
 </p>
 
 
