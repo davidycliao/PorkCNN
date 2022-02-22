@@ -1,6 +1,6 @@
-# PorkCNN  🐖🐖🐖
+# PorkCNN 
 
-### Pork Barrel Classification Task for Taiwan Pork Barrel Context Using Convolutional Neural Networks 
+### Pork Barrel Classification Task for Taiwan Pork Barrel Context Using Convolutional Neural Networks 🐖🐖🐖
 
 
 ## Enviroment Setting
