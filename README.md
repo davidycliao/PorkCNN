@@ -9,7 +9,10 @@
 - tensorflow>=2.4.4
 - numpy
 - scikit-learn
-- scipy 
+- numpy
+- pandas
+- lxml
+- jieba
 
 ## Notes
 
@@ -141,9 +144,11 @@ Acutal:    Pork (1)	                 76	                  749
 #### Learning Curves
 
 Note: The mean training loss and accuracy measured over each epochs, and the validation loss and accuracy measured at the end of each. 
+
 <p align="center">
-  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves.png" >
+  <img width="500" height="400" src="https://raw.githack.com/davidycliao/PorkCNN/main/images/learning_curves2.png" >
 </p>
+
 
 #### Application on New Dataset (Parliamentary Questions 專案質詢 from 1993 - 2020)
 
@@ -221,16 +226,9 @@ Note: This figure shows the number of parliamentary questions identified as pork
 If there’s anything you need about the application and end-to-end use, please don’t hesitate to send me a message.
 ```
 from tensorflow import keras
-model = keras.models.load_model('lour_pork_model') 
+model = keras.models.load_model('PorkCNN\lour_pork_model') 
 ```
 
-
-## Reference:
-
-- [Yoon Kim, Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882)
-- @gaussic's repo [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
-- Chapter 11, 13, 14 from [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
-- 中文世界地表最嗆、最強李宏毅老師的「深度學習」[@gga642381/ML2021-Spring](https://github.com/ga642381/ML2021-Spring)
 
 ## Cite:
 For citing this work, you can refer to the present GitHub project. For example, with BibTeX:
@@ -238,7 +236,7 @@ For citing this work, you can refer to the present GitHub project. For example, 
 @misc{PorkCNN,
     howpublished = {\url{https://github.com/davidycliao/PorkCNN}},
     title = {A Small Project for Pork Barrel Legislation Classification Using Convolutional Neural Networks},
-    author = {David, Yen-Chieh Liao and Ching-Jyuhn Luor},
+    author = {David, Yen-Chieh Liao},
     publisher = {GitHub},
     year = {2021}
 }
