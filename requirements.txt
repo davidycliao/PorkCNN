@@ -2,7 +2,7 @@ lxml>=4.6.5
 matplotlib==3.4.2
 pandas==1.2.4
 pillow>=8.3.0 
-scikit-learn==1.0.1
+scikit-learn==1.5.0
 numpy>=1.21
 seaborn==0.9.0
 tensorflow>=2.4.4
